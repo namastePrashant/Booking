@@ -1,0 +1,9 @@
+<p>Are you sure that you want to delete?</p>
+<form action="<?php echo $this->baseUrl().'/admin/index/delete/id/'.$this->id;  ?>" method="post">
+<div>
+<input type="hidden" name="id" value="<?php echo $this->message['id']; ?>" />
+<input type="submit" name="delete" value="Yes" />
+<input type="submit" name="delete" value="No" />
+</div>
+</form>
+

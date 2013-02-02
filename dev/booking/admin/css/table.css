@@ -1,0 +1,59 @@
+#table{
+    table-layout: fixed;
+    width: 1060px;
+    -moz-border-radius-bottomright: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    -webkit-border-radius-bottomright: 10px 10px;
+    alignment-adjust: central;
+    margin: 5px;
+}
+tr:nth-child(2n+1) {background: #CCC}
+tr:nth-child(2n) {background: #FFF}
+
+table tr:first-child td {
+    border-style: hidden;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table td{
+    vertical-align:middle;
+    text-align:left;
+    padding:7px;
+    font-size:14px;
+    font-family:Arial;
+    font-weight:normal;
+    color:#000000;
+
+}
+
+.SN {
+    width: 50px;
+}
+
+#filter_name, #filter_candidate_name, #filter_orientation_company {
+    width: 250px;
+}
+
+#filter_post {
+    width: 200px;
+}
+
+#filter_phone, #filter_address {
+    width: 175px;
+}
+
+#filter_passport_no, #filter_applied_country {
+    width: 100px;
+}
+
+#filter_profession {
+    width: 120px;
+}
+
+#filter_mofa_no {
+    width: 100px;
+}

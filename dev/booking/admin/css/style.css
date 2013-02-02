@@ -1,0 +1,326 @@
+body {
+    background-color: hsl(0,0%,90%);
+    padding:0px;
+    margin:0px;
+    font-size:15px;
+}
+
+#container{
+    width: 1060px;
+    margin: 0px auto;
+    padding: 10px;
+    min-height: 640px;
+    color: #000;
+    background-image: url(chrome://browser/content/abouthome/noise.png),
+        -moz-linear-gradient(hsla(0,0%,100%,.7), hsla(0,0%,100%,.4));
+    -moz-box-shadow: 0px 0px 5px 5px #888;
+    box-shadow: 0px 0px 5px 5px #888;
+    -web-box-shadow: 0px 0px 5px 5px #888;
+}
+.errors{
+    margin:0px;padding:2px;color:red;
+}
+.errors li{
+    list-style:none;
+}
+.small-border{
+    border-top:1px dotted #888;
+    padding:0px;
+    margin:0px;
+}
+#top-navigation {
+    margin: 0px auto;
+    padding: 6px 6px 0px 6px;
+    height: 65px;
+    line-height: 100%;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    -moz-box-shadow: 2px 2px 3px #666666;
+    background: #8B8B8B;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A9A9A9, endColorstr=#7A7A7A);
+    background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+    background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+    border: solid 1px #6D6D6D;
+}
+
+
+#header-nav{
+    width: 1060px;
+    margin: 0px auto;
+    padding:0px;
+}
+
+#footer-wrapper{
+    background: #8B8B8B;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A9A9A9, endColorstr=#7A7A7A);
+    background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
+    background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
+    height:60px;
+}
+#footer-nav{
+    width:1060px;
+    margin:0px auto;
+    color:#fff;
+}
+
+#top-navigation a {
+    font-weight: bold;
+    font-family: arial;
+    font-style: normal;
+    font-size: 12px;
+    color: #E7E5E5;
+    text-decoration: none;
+    display: block;
+    padding: 8px 20px 8px 20px;
+    margin: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+#top-navigation ul li:hover a, #top-navigation li:hover li a {
+    background: none;
+    border: none;
+    color: #666;
+    -box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+#menu-nav li{
+    display: inline-block;
+    float: left;
+}
+
+#top-navigation ul a:hover {
+    background: #0399D4 !important;
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFF, endColorstr=#FFF);
+    background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#A9A9A9)) !important;
+    background: -moz-linear-gradient(top,  #A9A9A9,  #A9A9A9) !important;
+    color: #000 !important;
+    border-radius: 25px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    text-shadow: 2px 2px 3px #FFFFFF;
+}
+
+html[xmlns] #top-navigation {
+    display: block;
+}
+* html #top-navigation {
+    height: 1%;
+}
+
+
+#detail-nav {
+    color: #000;
+
+}
+
+.edit_detail {
+    display: inline;
+    padding-left: 50px;
+}
+
+.delete_detail {
+    display: inline;
+    padding-left: 50px;
+}
+.back_detail{
+    display: inline;
+    float: right;
+    padding-right: 100px;
+}
+.clear {
+    clear: both;
+}
+
+#due_amount {
+    margin-left: 525px;
+    display: inline;
+    float: left;
+    padding-top: 35px;
+    font-size: large;
+    color: red;
+}
+
+#total_amount {
+    margin-left: 75px;
+    display: inline;
+    float: left;
+    padding-top: 35px;
+    font-size: large;
+}
+
+#agent_name {
+    float: left;
+    margin-left: 390px;
+}
+
+#filter_SNo{
+    width: 50px;
+}
+
+.amount-paid{
+    width: 115px;
+}
+
+#grid {
+    width:100%;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.dashboard-item{
+    display: inline-block;
+    margin: 25px 0;
+    padding: 100px 0 0 70px;
+}
+
+.dashboard-item a{
+    font-weight: normal;
+    font-family: Gerogia;
+    font-style: normal;
+    font-size: 16px;
+    color: #6E8279;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    text-shadow: 4px 4px 3px #CCC;
+}
+
+/*.dashboard-item *{
+    padding: 30px 0px 30px 88px;
+    width: 172px;
+    height: 180px;
+}
+
+.dashboard-item a:hover{
+    border: thin outset threedhighlight;
+    color: brown;
+}*/
+
+.dashboard-item a:active{
+    border: thin groove Menu;
+    color: brown;
+}
+
+#grid{
+    height: 640px;
+    width: 1000px;
+    overflow: auto;
+}
+
+#agent_image{
+    background-image: url("../image/User.png");
+}
+
+#agent_image a:hover{
+    border: thin outset threedhighlight;
+}
+
+#agent_image a:active{
+    border: medium outset threeddarkshadow;
+}
+
+#candidate_image{
+    background-image: url("../image/Candidate.png");
+}
+
+
+#candidate_image a:hover{
+    border: thin outset threedhighlight;
+}
+
+#candidate_image a:active{
+    border: medium outset threeddarkshadow;
+}
+
+#stamping_image{
+    background-image: url("../image/Stamping.png");
+}
+
+#stamping_image a:hover{
+    border: thin outset threedhighlight;
+}
+
+#stamping_image a:active{
+    border: medium outset threeddarkshadow;
+}
+
+#staff_image{
+    background-image: url("../image/Staff.png");
+}
+
+#staff_image a:hover{
+    border: thin outset threedhighlight;
+}
+
+#staff_image a:active{
+    border: medium outset threeddarkshadow;
+}
+
+#orientation_image{
+    background-image: url("../image/Orientation.png");
+}
+
+
+#orientation_image a, #medical_image a, #staff_image a, #stamping_image a, #candidate_image a, #agent_image a, #company_image a, #category_image a{
+    height: 172px;
+    padding: 0px 0 0px 0px;
+    width: 172px;
+}
+
+#orientation_image a:hover{
+    border: thin outset threedhighlight;
+}
+
+#orientation_image a:active{
+    border: medium outset threeddarkshadow;
+}
+
+
+
+
+#medical_image{
+    background-image: url("../image/Medical.png");
+}
+
+#medical_image a:hover{
+    border: thin outset threedhighlight;
+}
+
+#medical_image a:active{
+    border: medium outset threeddarkshadow;
+}
+
+#company_image{
+    background-image: url("../image/Company.png");
+}
+
+#company_image a:hover{
+    border: thin outset threedhighlight;
+}
+
+#company_image a:active{
+    border: medium outset threeddarkshadow;
+}
+
+#category_image{
+    background-image: url("../image/Category.png");
+}
+
+#category_image a:hover{
+    border: thin outset threedhighlight;
+}
+
+#category_image a:active{
+    border: medium outset threeddarkshadow;
+}

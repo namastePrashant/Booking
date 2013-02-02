@@ -1,0 +1,10 @@
+<?php
+
+$value = 0;
+foreach ($this->results as $result) {
+    $price = $result['price'];
+    $number = $this->number;
+    $rent = $this->rent;
+    $value = ($price + $rent) * $number;
+}
+echo $value;

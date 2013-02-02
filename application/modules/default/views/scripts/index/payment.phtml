@@ -1,0 +1,62 @@
+<?php echo $this->headLink()->appendStylesheet($this->baseUrl() . "/booking/admin/css/booking.css"); ?>
+<h2 style="border-bottom:2px dotted #555;width:240px;">Confirm your payment!</h2>
+<?php $data = $this->data; ?>
+<div class="bar1">
+    <label><strong>Pickup Location</strong></label><br />
+    <label><strong>Return Location</strong></label><br />
+    <label><strong>Number of Vehicles</strong></label><br />
+    <label><strong>Pickup Date</strong></label><br />
+    <label><strong>Return Date</strong></label><br />
+    <label><strong>Pickup Time</strong></label><br />
+    <label><strong>Return Time</strong></label><br />
+    <label><strong>First Name</strong></label><br />
+    <label><strong>Last Name</strong></label><br />
+    <label><strong>Email Address</strong></label><br />
+    <label><strong>Telephone Number</strong></label><br />
+    <label><strong>Address</strong></label><br />
+    <label><strong>Next Address</strong></label><br />
+    <label><strong>Postal Code</strong></label><br />
+    <label><strong>City</strong></label><br />
+    <label><strong>Country</strong></label><br />
+    <label><strong>Total Cost</strong></label><br /><br />
+    <a href="<?php echo $this->baseUrl().'/index/info-edit/id/'.$data['booking_id']; ?>">Go Back</a>
+</div>
+
+<div class="bar2">
+    <?php echo $data['pickuplocation'] ?><br />
+    <?php echo $data['returnlocation'] ?><br />
+    <?php echo $data['number'] ?><br />
+    <?php echo $data['pickup_date'] ?><br />
+    <?php echo $data['return_date'] ?><br />
+    <?php echo $data['pickup_time'] ?><br />
+    <?php echo $data['return_time'] ?><br />
+    <?php echo $data['first_name'] ?><br />
+    <?php echo $data['last_name'] ?><br />
+    <?php echo $data['email_address'] ?><br />
+    <?php echo $data['telephone_no'] ?><br />
+    <?php echo $data['address'] ?><br />
+    <?php echo $data['next_address'] ?><br />
+    <?php echo $data['postal_code'] ?><br />
+    <?php echo $data['city'] ?><br />
+    <?php echo $data['country'] ?><br />
+    <?php echo $data['total_cost'] ?><br /><br />
+    <?php
+    $description = '�slensk l�sing<br>� �inni v�ru';
+
+    $checkvaluemd5 = md5(htmlentities($this->data['total_cost'] . $this->currency . $this->payment['merchant'] . $this->payment['terminal'] . $description . $this->payment['secretcode'] . 'TEST'));
+    ?>
+
+    <form action='https://netgreidslur.korta.is/testing/' method='post'>
+        <input type='hidden' name='amount' value='<?php echo $this->data['total_cost']; ?>' />
+        <input type='hidden' name='currency' value='<?php echo $this->currency; ?>' />
+        <input type='hidden' name='merchant' value='<?php echo $this->payment['merchant']; ?>' />
+        <input type='hidden' name='terminal' value='<?php echo $this->payment['terminal']; ?>' />
+        <input name='description' type='hidden' value='<?php echo $description; ?>'>
+        <input type='hidden' name='checkvaluemd5' value='<?php echo $checkvaluemd5; ?>' />
+
+        <input type='hidden' name='refermethod' value='POST' />
+        <input type='hidden' name='refertarget' value='_top' />
+        <input type='hidden' name='downloadurl' value='<?php echo $this->callbackUrl; ?>' />
+        <input type="submit" value="Pay at KORTA" />
+    </form>
+</div>

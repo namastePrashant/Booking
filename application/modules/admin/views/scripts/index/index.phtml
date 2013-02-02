@@ -1,0 +1,26 @@
+<?php echo $this->headLink()->appendStylesheet($this->baseUrl() . "/booking/admin/css/table.css"); ?>
+<table id="table">
+    <tr>
+       
+        <th>From Location</th>
+        <th>To Location</th>
+        <th>Price</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    <?php foreach ($this->result as $result): ?>
+
+        <tr>
+          
+            <td><?php echo $result['from_location']; ?></td>
+            <td><?php echo $result['to_location']; ?></td>
+            <td><?php echo $result['price']; ?></td>
+            <td>
+                <a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'edit', 'id' => $result['price_id'])); ?>">Edit </a>
+            </td>
+            <td>
+                <a href="<?php echo $this->url(array('controller' => 'index', 'action' => 'delete', 'id' => $result['price_id'])); ?>">Delete</a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</table>

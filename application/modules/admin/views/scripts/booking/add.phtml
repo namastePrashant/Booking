@@ -1,0 +1,32 @@
+<?php $form = $this->form->getElements(); ?>
+<?php $this->headLink()->appendStylesheet($this->baseUrl() . "/booking/admin/css/booking.css"); ?>
+<fieldset>
+    <legend><h2></h2></legend>
+    <div class="top-bar">
+        <div class="bar1">
+            <label>Pickup</label><br />
+            <div class="form-item">
+                <?php echo $form['pickup_location'] ?>
+            </div>
+        </div>
+        <div class="bar2">
+            <label>Return</label><br />
+            <div class="form-item">
+                <?php echo $form['return_location'] ?>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="bar1">
+            <div class="form-item">
+                <?php echo $form['pickup_date'] ?> 
+                <?php echo $form['pickup_time'] ?>
+            </div>
+        </div>
+        <div class="bar1">
+            <div class="form-item">
+                <?php echo $form['return_date'] ?>
+                <?php echo $form['return_time'] ?>
+            </div>
+        </div>
+    </div>
+</fieldset>

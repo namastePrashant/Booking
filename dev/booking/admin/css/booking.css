@@ -1,0 +1,77 @@
+.left{
+    margin: 2px;
+    float:left;
+
+}
+.bar1{
+    width:290px;
+    float:left;
+}
+.bar2{
+    width:290px;
+    float:left;
+}
+.clear{
+    clear:both;
+}
+.form-item{
+    padding:4px;
+    margin:4px;
+    
+
+
+}
+.form-select,.form-text{
+    width:185px;
+    border-radius: 5px;
+
+}
+.middle-bar{
+    alignment-adjust: central;
+    float:right;
+    padding-right: 1078px;
+}
+/*.calender-image1{
+    background: url("../image/calendar.png");
+    width:12px;
+    height: 15px;
+    padding: 2px;
+    float:right;
+    right:1155px;
+    position :absolute;
+    margin:2px;
+
+
+
+}
+.calender-image2{
+    background: url("../image/calendar.png");
+    width:12px;
+    height: 15px;
+    padding: 2px;
+    float:right;
+    right:865px;
+    position :absolute;
+    margin:2px;
+
+}*/
+.form-number-select{
+    border-radius: 5px;
+}
+.nav{
+    right:200px;
+    margin:5px;
+    padding: 4px;
+    margin-left: 92px;
+    margin-top: 0px;
+    
+}
+.left-nav{
+    width:30px;
+    margin:4px;
+    padding:2px;
+    height:20px;
+    float:right;
+    
+    
+}

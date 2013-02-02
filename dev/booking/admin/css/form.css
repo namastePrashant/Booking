@@ -1,0 +1,9 @@
+body { }
+
+.clear {clear:both;}
+
+div.form-text{
+    padding: 10px 10px 10px 10px;
+    margin: 2px 2px 2px 2px;
+    float: left;
+}

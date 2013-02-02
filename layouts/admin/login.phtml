@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Admin Login</title>
+        <?php echo $this->headLink(); ?>
+    </head>
+    <body>
+        <div class="flash-messages">
+            <?php
+            $flashMessenger = $this->flashMessages();
+            print $flashMessenger->getMessages();
+            ?>
+        </div>
+        <div id="container">
+            <?php echo $this->layout()->content; ?>
+        </div>
+    </body>
+</html>

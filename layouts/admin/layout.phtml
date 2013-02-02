@@ -1,0 +1,39 @@
+<html>
+    <script type="text/javascript" src="<?php echo $this->baseUrl() . "/common/js/jquery-ui-1.8.20.custom.min.js"; ?>"></script>
+    <script type="text/javascript" src="<?php echo $this->baseUrl() . '/common/js/jquery-1.7.2.min.js'; ?>"></script>
+    <head>
+        <meta type="content" charset="utf-8" >
+        <title>Car Rent Booking System </title>
+        <?php
+        echo $this->headLink()->appendStylesheet($this->baseUrl() . "/booking/admin/css/style.css");
+        ?>
+        <script type="text/javascript">
+            site = {
+                'baseUrl':"<?php echo $this->baseUrl(); ?>"
+            };
+        </script>
+    </head>
+    <body>
+        <div id="top-navigation">
+            <div id="header-nav">
+                <ul id="menu-nav">       
+                    <li><a href="<?php echo $this->baseUrl() . '/admin/location'; ?>">List of Locations</a></li>
+                    <li><a href="<?php echo $this->baseUrl() . '/admin/location/add'; ?>">Add New Location</a></li>
+                    <li><a href="<?php echo $this->baseUrl() . '/admin/index/add'; ?>">Add New Price</a></li>
+                    <li><a href="<?php echo $this->baseUrl() . '/admin/index'; ?>">List of Price</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class='clear'></div>
+        <div id="container">
+            <div>
+                <?php echo $this->layout()->content; ?>
+            </div><div class='clear'></div>
+        </div>
+        <div id="footer-wrapper">
+            <div id="footer-nav">
+
+            </div>
+        </div>
+    </body>
+</html>
